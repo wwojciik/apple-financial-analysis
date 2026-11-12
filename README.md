@@ -70,8 +70,43 @@ A few things stood out:
 - `data/` - processed financial data in CSV and Excel formats
 - `charts/` - financial charts
 
+## How to Run
+
+To reproduce the analysis locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/wwojciik/apple-financial-analysis.git
+   ```
+
+2. Open the project folder:
+   ```bash
+   cd apple-financial-analysis
+   ```
+
+3. Install the required Python packages:
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Open `financial_analysis.ipynb` in VS Code or Jupyter Notebook.
+
+5. Run the notebook cells in order to retrieve financial data, calculate performance metrics, validate the results, and generate visualizations.
+
+An internet connection is required to retrieve data from the SEC EDGAR API.
+
 ## What I Learned
 
 Working with the SEC API showed me why checking reporting periods matters, especially when the same financial figures appear in several annual filings.
 
 It was also good practice in using Pandas to organize financial data and Matplotlib to present the results.
+
+## Limitations
+
+This analysis focuses on Apple's annual revenue, net income, and net profit margin between 2020 and 2025.
+
+It does not examine product-level performance, geographic segments, operating expenses, or broader macroeconomic conditions.
+
+As a result, the analysis identifies financial trends and changes in profitability but does not establish the underlying causes of these changes.
+
+The findings are based on historical financial data and should not be interpreted as forecasts of future performance.
